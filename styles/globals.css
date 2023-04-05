@@ -1,0 +1,22 @@
+@import '@nextra-theme/clean/dist/style.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.shipping-table table{
+  overflow: auto;
+  word-break: keep-all;
+  @apply nx-text-sm;
+  @apply nx-overflow-x-auto
+}
+.shipping-table th{
+  text-align: center;
+  @apply nx-px-2;
+  @apply nx-py-1;
+}
+.shipping-table td{
+  @apply nx-px-2;
+  @apply nx-py-1;
+}
