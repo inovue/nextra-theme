@@ -19,13 +19,12 @@ export default function Header(props:Props): ReactElement {
   const isDark = resolvedTheme === 'dark';
   
   return (
-    <>{isMounted &&
     <header className={`nx-flex nx-w-full nx-items-center nx-justify-between nx-px-4 nx-h-16 nx-top-0 nx-backdrop-blur nx-z-40 ${props.fixed?'nx-fixed':'nx-sticky'}`}>
       <Link href='/'>
         <h1 className="nx-text-2xl nx-font-black" >{config.siteName}</h1>
       </Link>
       <nav className="nx-flex">
-        <ul className="nx-flex nx-gap-4 nx-font-bold">
+        <ul className="nx-flex nx-items-center nx-gap-4 nx-font-bold">
           {navPages.map(page => (
             <li key={page.route} >{page.active ? 
               <span className='nx-text-gray-500'>{page.frontMatter?.title || page.name}</span> :
@@ -41,6 +40,5 @@ export default function Header(props:Props): ReactElement {
         </ul>
       </nav>
     </header>
-    }</>
   )
 }

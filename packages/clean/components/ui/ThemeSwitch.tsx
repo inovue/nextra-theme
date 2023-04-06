@@ -11,8 +11,8 @@ export default function ThemeSwitch() {
   const onKeyDownHandler = (e:React.KeyboardEvent<HTMLButtonElement>) => e.key==='Enter' && toggleTheme()
 
   return (
-    <button aria-label="Toggle Dark Mode" tabIndex={0} onClick={toggleTheme} onKeyDown={onKeyDownHandler}>
-      {isMounted ? isDark ? <MoonIcon /> : <SunIcon /> : null}
+    <button className='nx-p-1 nx-w-8 nx-h-8 nx-flex nx-items-center nx-justify-center' aria-label="Toggle Dark Mode" tabIndex={0} onClick={toggleTheme} onKeyDown={onKeyDownHandler}>
+      {isMounted ? isDark ? <MoonIcon /> : <SunIcon /> : <></>}
     </button>
   )
 }
