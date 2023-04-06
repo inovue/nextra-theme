@@ -1,21 +1,16 @@
 import type { ReactElement } from 'react'
 import Link from 'next/link'
-import dayjs from 'dayjs'
 import { split } from '../../utils/get-tags'
 import { useBlogContext } from '../../blog-context'
 import { getParent } from '../../utils/parent'
-
-import {BiTime} from 'react-icons/bi'
-import {BsFillPersonFill} from 'react-icons/bs'
 
 export default function Meta(): ReactElement {
   const { opts, config } = useBlogContext()
   const { author, date, tag } = opts.frontMatter
   const { back } = getParent({ opts, config })
   const tags = tag ? split(tag) : []
-
   const readingTime = opts.readingTime?.text
-  const dateText = date && dayjs(date).format('YYYY-MM-DD')
+  
   return (
     <div className='nx-not-prose nx-flex nx-flex-col nx-gap-6 nx-pb-12'>
       <div className='nx-flex'>
@@ -24,15 +19,10 @@ export default function Meta(): ReactElement {
         }
         <div className='nx-flex-1' />
         {date && 
-          <div className='nx-flex nx-items-center'>
-            <BiTime className='nx-mr-2'/>
-            <time dateTime={dateText}>{dateText}</time>
-          </div>
+          <time dateTime={new Date(date).toISOString()}>{date}</time>
         }
         {readingTime && 
-          <div className='nx-flex'>・
-            <div>{readingTime}</div>
-          </div>
+          <div className='nx-flex'>・{readingTime}</div>
         }
       </div>
       {tags.length > 0 && 

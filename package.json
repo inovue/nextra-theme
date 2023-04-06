@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "dev:theme": "concurrently \"next dev\" \"npm run dev -w @nextra-theme/clean \" ",
+    "dev:packages": "concurrently \"next dev\" \"npm run dev -w @nextra-theme/clean\" ",
     "build": "next build && next export && next-image-export-optimizer",
     "build:packages": "npm run build -ws --if-present",
+    "publish:packages": "npm run publish -ws --if-present",
     "serve": "npm run build && serve ./out",
     "lint": "next lint"
   },
@@ -24,6 +25,7 @@
     "nextra-theme-blog": "^2.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "rimraf": "^4.4.1",
     "serve": "^14.2.0",
     "typescript": "5.0.2"
   },
