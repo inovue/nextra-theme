@@ -27,7 +27,7 @@ export default function Header(props:Props): ReactElement {
         <ul className="nx-flex nx-items-center nx-gap-4 nx-font-bold">
           {navPages.map(page => (
             <li key={page.route} >{page.active ? 
-              <span className='nx-text-gray-500'>{page.frontMatter?.title || page.name}</span> :
+              <span className='nx-text-gray-500 dark:nx-text-gray-300'>{page.frontMatter?.title || page.name}</span> :
               <Link href={page.route} passHref>{page.frontMatter?.title || page.name}</Link>
             }</li>
           ))}
