@@ -1,6 +1,6 @@
 {
   "name": "@nextra-theme/clean",
-  "version": "0.0.5",
+  "version": "0.0.8",
   "description": "",
   "files": [
     "dist/*"
@@ -39,7 +39,8 @@
     "dev:layout": "tsup --watch",
     "dev:tailwind": "TAILWIND_MODE=watch npx postcss style.css -o dist/style.css --watch",
     "build": "npm run clean && tsup && npx postcss style.css -o dist/style.css --verbose",
-    "publish": "npm run build && npm publish dist --access public",
+    "prepublishOnly": "npm run build",
+    "publish": "npm publish dist --access public",
     "clean": "rimraf ./dist"
   },
   "repository": {
