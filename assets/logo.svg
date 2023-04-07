@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <rect
+       x="120.76053"
+       y="108.43803"
+       width="263.70156"
+       height="236.59206"
+       id="rect9578" />
+  </defs>
+  <g
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:HOT-Kakukuzusishukk;-inkscape-font-specification:HOT-Kakukuzusishukk;fill:#000000;fill-opacity:1;stroke:none"
+       x="115.83153"
+       y="157.72804"
+       id="text1706"><tspan
+         id="tspan1704"
+         x="115.83153"
+         y="157.72804" /></text>
+    <g
+       aria-label="開"
+       transform="matrix(2.8218695,0,0,2.8248588,-355.39687,-389.84604)"
+       id="text9576"
+       style="font-size:192px;line-height:1.25;font-family:HOT-Kakukuzusishukk;-inkscape-font-specification:HOT-Kakukuzusishukk;white-space:pre;shape-inside:url(#rect9578)">
+      <path
+         d="m 307.38377,319.2535 v -181.248 h -88.896 v 57.984 h 72 v 123.264 z m -20.544,0 v -37.248 h -51.456 v -3.648 h 51.456 v -37.44 h -30.912 v -3.648 h 30.912 v -17.088 h -30.912 v -3.648 h 30.912 v -16.896 h -68.352 v 16.896 h 20.544 v 3.648 h -20.544 v 37.632 h 16.896 v -20.544 h 3.648 v 20.544 h 30.912 v 3.648 h -51.456 v 37.44 h 51.456 v 3.456 h -51.456 v 16.896 z m -144,0 v -123.264 h 72 v -57.984 h -88.896 v 181.248 z m 72,0 v -16.896 h -51.456 v -3.456 h 51.456 v -37.44 h -51.456 v -3.648 h 30.912 v -20.544 h 3.648 v 20.544 h 16.896 v -37.632 h -20.544 v -3.648 h 20.544 v -16.896 h -68.352 v 16.896 h 30.72 v 3.648 h -30.72 v 17.088 h 30.72 v 3.648 h -30.72 v 37.44 h 51.456 v 3.648 h -51.456 v 37.248 z m 75.648,-160.704 h -55.104 v -3.648 h 55.104 z m 0,20.544 h -55.104 v -3.648 h 55.104 z m -92.544,-20.544 h -55.104 v -3.648 h 55.104 z m 0,20.544 h -55.104 v -3.648 h 55.104 z"
+         id="path15140" />
+    </g>
+  </g>
+</svg>

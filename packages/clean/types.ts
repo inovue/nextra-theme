@@ -5,6 +5,7 @@ import type { Components } from 'nextra/mdx'
 
 export interface NextraBlogTheme {
   siteName?: string
+  siteLogo?: ReactNode
 
   comments?: ReactNode
   components?: Components

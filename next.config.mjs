@@ -28,6 +28,14 @@ const nextConfig = {
     nextImageExportOptimizer_storePicturesInWEBP: true,
     nextImageExportOptimizer_exportFolderName: "nextImageExportOptimizer",
     nextImageExportOptimizer_generateAndUseBlurImages: true,
+  },
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.svg$/,
+      issuer: /\.[jt]sx?$/,
+      use: ["@svgr/webpack"],
+    });
+    return config;
   }
 }
 

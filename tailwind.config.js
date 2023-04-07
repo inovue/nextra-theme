@@ -2,6 +2,7 @@
 module.exports = {
   prefix: 'nx-',
   content: [
+    "./theme.config.jsx",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
@@ -9,5 +10,6 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  darkMode: ['class', 'html[class~="dark"]']
 }
 
