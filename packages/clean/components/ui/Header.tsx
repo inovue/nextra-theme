@@ -20,7 +20,7 @@ export default function Header(props:Props): ReactElement {
   
   return (
     <header className={`nx-flex nx-w-full nx-items-center nx-justify-between nx-px-4 nx-h-16 nx-top-0 nx-backdrop-blur nx-z-40 ${props.fixed?'nx-fixed':'nx-sticky'}`}>
-      <Link href='/'>
+      <Link href="/" title='Home button'>
         {config.siteLogo ? config.siteLogo : <h1 className="nx-text-2xl nx-font-black" >{config.siteName}</h1>}
       </Link>
       <nav className="nx-flex">

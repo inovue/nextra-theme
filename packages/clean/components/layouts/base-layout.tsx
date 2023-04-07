@@ -5,12 +5,15 @@ import Header from '../ui/Header';
 
 export const BaseLayout:React.FC<{children:React.ReactNode}> = ({children}) => {
   const { config, opts } = useBlogContext()
-  const title = `${opts.title}${config.titleSuffix || ''}`
+  
   return (
     <>
       <Head>
-        <title>{title}</title>
-        {config.head?.({ title, meta: opts.frontMatter })}
+        <title>{[opts.title, config.siteName].filter(v=>!!v).join('-')}</title>
+        { opts.frontMatter.description && 
+          <meta name="description" content={opts.frontMatter.description} /> 
+        }
+        {config.head?.({ title: opts.title, meta: opts.frontMatter })}
       </Head>
       <Header />
       <main>
